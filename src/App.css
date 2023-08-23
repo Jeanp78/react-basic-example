@@ -1,0 +1,88 @@
+.tw-followCard {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.tw-followCard:hover {
+    background-color: #333;
+}
+
+.tw-followCard-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.tw-followCard-header img {
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.tw-followCard-header img:hover {
+    opacity: 0.7;
+}
+
+.tw-userName:hover {
+    text-decoration: underline;
+}
+
+.tw-followCard-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.tw-followCard-aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tw-button {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.follow {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.followed {
+    width: 130px;
+    background-color: #1a1a1a;
+    border: 2px solid red;
+    color: white;
+}
+
+.tw-button.followed:hover {
+    background-color: rgba(255, 0, 0, 0.16);
+    color: red;
+}
+
+.unfollow-text {
+    display: none;
+}
+
+.tw-button.followed:hover .follow-text {
+    display: none;
+}
+
+.tw-button.followed:hover .unfollow-text {
+    display: block;
+}
+
+.tw-followCard-aside button:hover {
+    opacity: 0.8;
+}
